@@ -1,0 +1,28 @@
+
+#side-bar {
+  background-color: darken($highlight, 15%);
+}
+
+
+#side-nav ul li {
+  list-style-type: none;
+  font-size: 1em;
+  padding: 0.6em;
+}
+
+#side-nav ul li a, #side-nav ul li a:visited  {
+  padding: 0.6em;
+  text-decoration: none;
+  color: #000;
+}
+
+#side-nav ul li a:active, #side-nav ul li a:hover {
+  background-color: lighten($fg-colour, 40%);
+  color: $bg-colour;
+  border-radius: 5px;
+}
+
+li .list-item {
+  color: $fg-colour;
+}
+

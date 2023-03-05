@@ -1,0 +1,41 @@
+
+@mixin push--auto {
+  margin: {
+    left: auto;
+    right: auto;
+   }
+}
+
+body {
+  background-color: $bg-colour;
+}
+
+#main-content {
+  width: 100%;
+  height: 100%;
+  background-color: $bg-colour;
+}
+
+footer {
+  @include push--auto;
+  background-color: lighten($highlight, 10%);
+}
+
+.advert {
+  border: 1px solid rgba(85, 0, 127, 1);
+}
+
+
+#ad-area-1, #ad-area-3 {
+  width: 100%;
+  height: 18em;
+}
+
+#ad-area-2 {
+  position: static;
+  bottom: 2em;
+  margin-top: 0.6em;
+  padding: 0.4em;
+  width: 100%;
+  height: 6em;
+}

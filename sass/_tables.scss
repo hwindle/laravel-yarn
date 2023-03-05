@@ -1,0 +1,26 @@
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 90%;
+  margin: 0 auto;
+  border: 2px solid $highlight;
+  border-radius: 4px;
+  background-color: $bg-colour;
+}
+
+th, td {
+  text-align: left;
+  padding: 1rem;
+}
+
+th {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+
+/** stripy table **/
+tr:nth-child(even) {
+  background-color: darken($bg-colour, 15%);
+  border-bottom: darken($highlight, 15%);
+}
